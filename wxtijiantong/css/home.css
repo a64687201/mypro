@@ -353,7 +353,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #all-nav {
   position: fixed;
-  margin-top: 0.3125rem;
   bottom: 0;
   z-index: 99;
   width: 100%;
@@ -363,12 +362,12 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.6);
   -webkit-box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.6);
   -moz-box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.6);
+  padding: 0.1875rem 0;
 }
 #all-nav a {
   display: inline-block;
-  padding: 0.1875rem 0;
   box-sizing: border-box;
-  height: 1.375rem;
+  height: 1rem;
   width: 25%;
   border-right: 1px solid #e7e7e7;
 }

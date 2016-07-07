@@ -115,123 +115,98 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.container {
-  margin-bottom: 1.84375rem;
+html {
+  height: 100%;
+  position: relative;
 }
-.container .top-section {
+html body {
+  height: 100%;
+}
+html body .container {
+  height: 100%;
+  position: relative;
+}
+html body .container .top-section {
   padding-top: 0.25rem;
   height: 3.125rem;
   background: url("../img/mypic/bg.jpg") no-repeat center;
   background-size: cover;
 }
-.container .top-section p {
+html body .container .top-section p {
   text-align: center;
   line-height: 1.25rem;
   font-size: 0.5rem;
   color: white;
 }
-.container .top-section a {
-  display: block;
-  margin: 0 auto;
-  font-size: 0.4375rem;
-  background-color: #209AF9;
-  text-align: center;
-  width: 3.4375rem;
-  padding: 0.25rem 0;
-  border-radius: 0.15625rem;
-  color: white;
-}
-.container .order-section {
-  height: 1.25rem;
-  padding: 0.3125rem 0;
+html body .container .main-section {
   background-color: white;
+}
+html body .container .main-section ul li {
+  position: relative;
+  padding: 0.25rem 0.46875rem;
   border-bottom: 1px solid #e7e7e7;
 }
-.container .order-section a {
-  display: block;
-  width: 33%;
-  line-height: 0.625rem;
-  text-align: center;
-  border-left: 1px solid #e7e7e7;
-}
-.container .order-section a:nth-child(1) {
-  border-left: none;
-}
-.container .order-section a .iconfont {
-  font-size: 0.4375rem;
-  margin-right: 0.0625rem;
-}
-.container .main-section {
-  margin-top: 0.3125rem;
-  background-color: white;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-}
-.container .main-section a {
-  display: block;
-  border-bottom: 1px solid #e7e7e7;
-  padding: 0 0.3125rem;
-  font-size: 0.4375rem;
-  line-height: 1.25rem;
-}
-.container .main-section a:last-child {
-  border: none;
-}
-.container .main-section a .iconfont {
-  font-size: 0.4375rem;
-  margin-right: 0.0625rem;
-}
-.container .less-section {
-  margin-top: 0.3125rem;
-  background-color: white;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-}
-.container .less-section a {
-  display: block;
-  border-bottom: 1px solid #e7e7e7;
-  padding: 0 0.3125rem;
-  font-size: 0.4375rem;
-  line-height: 1.25rem;
-}
-.container .less-section a:last-child {
-  border: none;
-}
-.container .less-section a .iconfont {
-  font-size: 0.4375rem;
-  margin-right: 0.0625rem;
-}
-#all-nav {
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-  width: 100%;
-  text-align: center;
-  background-color: white;
-  border-top: 1px solid #e7e7e7;
-  box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.6);
-  -webkit-box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.6);
-  -moz-box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.6);
-  padding: 0.1875rem 0;
-}
-#all-nav a {
-  display: inline-block;
-  box-sizing: border-box;
-  height: 1rem;
-  width: 25%;
-  border-right: 1px solid #e7e7e7;
-}
-#all-nav a:nth-child(4) {
-  border-right: none;
-}
-#all-nav a i {
-  font-size: 0.4375rem;
-  line-height: 0.46875rem;
+html body .container .main-section ul li:nth-child(even) {
   color: #98989f;
+  line-height: 0.6875rem;
+  display: none;
 }
-#all-nav a p {
-  font-size: 0.375rem;
-  color: #98989f;
+html body .container .main-section ul li label {
+  padding-top: 0.15625rem;
+}
+html body .container .main-section ul li input {
+  margin-left: -0.09375rem;
+  border: none;
+  outline: none;
+  color: #333333;
+  font-size: 0.4375rem;
+  padding: 0.0625rem 0;
   line-height: 0.5625rem;
 }
-/*# sourceMappingURL=personalCenter.css.map */
+html body .container .main-section ul .phone-input #send-sms {
+  display: block;
+  border: none;
+  outline: none;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  position: absolute;
+  right: 0.46875rem;
+  top: 50%;
+  margin-top: -0.46875rem;
+  font-size: 0.375rem;
+  background-color: #209AF9;
+  border-radius: 0.15625rem;
+  color: white;
+  padding: 0 0.25rem;
+}
+html body .container .btn-section {
+  position: absolute;
+  width: 100%;
+  bottom: 3.28125rem;
+  padding: 0 0.625rem;
+}
+html body .container .btn-section div {
+  width: 100%;
+  border: none;
+  background-color: #209AF9;
+  color: white;
+  line-height: 1.25rem;
+  border-radius: 0.15625rem;
+  text-align: center;
+}
+html body .container .icon-section {
+  width: 100%;
+  position: absolute;
+  bottom: 0.625rem;
+}
+html body .container .icon-section .icon-box {
+  width: 33%;
+  text-align: center;
+  line-height: 0.6875rem;
+  color: #c9c9c9;
+  font-size: 0.375rem;
+}
+html body .container .icon-section .icon-box .iconfont {
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=longin.css.map */
