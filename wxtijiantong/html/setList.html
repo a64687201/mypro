@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>套餐列表</title>
+		<link rel="stylesheet" href="../css/amazeui.min.css" />
+		<link rel="stylesheet" href="../css/setList.css" />
 	</head>
+
 	<body>
+		<div class="container">
+			<button class="top-section" data-am-offcanvas="{target: '#filter-nav'}"></button>
+			<!--侧边筛选栏-->
+			<div id="filter-nav" class="am-offcanvas">
+				<div class="am-offcanvas-bar">
+					<div class="selected-list"></div>
+					<div class="filter-list">
+						<dl>
+							<dt><strong>体检人群：</strong></dt>
+							<dd>
+								<!--<a href="#" class="more fr">更多</a>-->
+								<a href="#" class="no-choose">不限</a>
+								<a href="#">老年体检体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+								<a href="#">老年体检</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="main-wrap">
+				<div class="main-list"></div>
+			</div>
+		</div>
+		<!--全局导航条-->
+		<div id="all-nav">
+			<a href="home.html" class="fl">
+				<i class="iconfont">&#xe676;</i>
+				<p>首页</p>
+			</a>
+			<a href="#" class="fl">
+				<i class="iconfont">&#xe719;</i>
+				<p>预约体检</p>
+			</a>
+			<a href="shoppingCart.html">
+				<i class="iconfont">&#xe6af;</i>
+				<p>购物车</p>
+			</a>
+			<a href="personalCenter.html" class="fr">
+				<i class="iconfont">&#xe78b;</i>
+				<p>个人中心</p>
+			</a>
+		</div>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/amazeui.min.js"></script>
+		<script type="text/javascript" src="../js/base.js"></script>
+		<script type="text/javascript" src="../js/setList.js"></script>
 	</body>
+
 </html>

@@ -1,9 +1,9 @@
 var loginController = function() {
-		//调用base
+		//调用base.js
 		baseSetting.call(this)
-			//输入框样式
+		//输入框样式
 		this.inputSet()
-			//发送验证码
+		//发送验证码
 		this.sendSMS()
 	}
 	//输入框样式

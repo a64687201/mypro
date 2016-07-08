@@ -70,6 +70,7 @@ select {
 }
 .no_highlight,
 a,
+label,
 input,
 select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

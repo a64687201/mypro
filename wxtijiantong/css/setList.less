@@ -1,1 +1,104 @@
 @import "base.less";
+.container {
+    .top-section {
+        display: block;
+        height: 4.4*@rex;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: @mainBlue;
+        color: white;
+    }
+    #filter-nav {
+        .am-offcanvas-bar {
+            width: 100%;
+            background-color: white;
+            padding: 1.5*@rex;
+            border: none;
+            &:after {
+                background-color: white;
+            }
+            .selected-list {
+                height: 4.4*@rex;
+                border-bottom: 1px solid @mainBorder;
+            }
+            .filter-list {
+                dl {
+                    overflow: hidden;
+                    dt {
+                        width: 2rem;
+                        text-align: center;
+                        float: left;
+                        margin-top: 10px;
+                        color: @mainBlue;
+                        font-size: 1.2*@rex;
+                    }
+                    dd {
+                        width: 9.5rem;
+                        float: left;
+                        overflow: hidden;
+                        position: relative;
+                        margin-left: 0.5rem;
+//                      height: 1.8*@rex;
+                        .more {
+                            font-size: 1.2*@rex;
+                            color: #888;
+                            border: none;
+                        }
+                        .no-choose {
+                            background-color: #209AF9;
+                            color: white;
+                        }
+                        a {
+                            font-size: 1.2*@rex;
+                            min-width: 6*@rex;
+                            padding: 0 0.2*@rex;
+//                          height: 1.8*@rex;
+//                          line-height: 1.8*@rex;
+                            text-align: center;
+                            border: 1px solid @mainBlue;
+                            color: @mainBlue;
+                            border-radius: 0.3*@rex;
+                            display: inline-block;
+                            margin: 0.5*@rex 0.7*@rex 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//全局导航条
+#all-nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid @mainBorder;
+    box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    -webkit-box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    -moz-box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    padding: 0.6*@rex 0;
+    a {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 3.2*@rex;
+        width: 25%;
+        border-right: 1px solid @mainBorder;
+        &:nth-child(4) {
+            border-right: none;
+        }
+        i {
+            font-size: 1.4*@rex;
+            line-height: 1.5*@rex;
+            color: @smallTex;
+        }
+        p {
+            font-size: 1.2*@rex;
+            color: @smallTex;
+            line-height: 1.8*@rex;
+        }
+    }
+}
