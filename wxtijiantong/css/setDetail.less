@@ -1,0 +1,75 @@
+@import "base.less";
+.container {
+    .goods-info {
+        background-color: white;
+        height: 8*@rex;
+        position: relative;
+        padding: 1*@rex 10*@rex 1*@rex 1*@rex;
+        border-bottom: 1px solid @mainBorder;
+        .box-l {
+            h6 {
+                color: @mainBlue;
+                font-size: 1.6*@rex;
+            }
+            p {
+                margin-top: 0.5*@rex;
+                font-size: 1.2*@rex;
+                color: @smallTex;
+                height: 4*@rex;
+                line-height: 2*@rex;
+                overflow: hidden;
+            }
+        }
+        .box-r {
+            position: absolute;
+            right: 1*@rex;
+//          bottom: 2*@rex;
+            top: 1*@rex;
+            max-width: 8*@rex;
+            overflow: hidden;
+            h6 {
+                font-size: 1.8*@rex;
+                color: @mainRed;
+                text-align: right;
+            }
+            p {
+                font-size: 1.2*@rex;
+                color: @smallTex;
+                text-align: right;
+                margin-top: 0.5*@rex;
+            }
+        }
+    }
+    .main-section {
+        margin-top: 1*@rex;
+        background-color: white;
+        border-top: 1px solid @mainBorder;
+        border-bottom: 1px solid @mainBorder;
+        .main-list {
+            
+        }
+    }
+}
+#go-buy {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    height: 4.4*@rex;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid @mainBorder;
+    box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    -webkit-box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    -moz-box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+    padding: 0.5*@rex;
+    .btn{
+        display: block;
+        width: 100%;
+        height: 3.4*@rex;
+        line-height: 3.4*@rex;
+        background-color: @mainBlue;
+        color: white;
+        font-size: 1.2*@rex;
+    }
+}
