@@ -151,6 +151,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-top: none;
 }
 .container .main-box .main-list .list-box .list-top {
+  display: block;
   position: relative;
   padding: 0.3125rem 0.3125rem 0.3125rem 3.125rem;
   border-bottom: 1px solid #e7e7e7;
