@@ -9,16 +9,29 @@ var gulp = require('gulp'),
 	htmlmin = require('gulp-htmlmin'),
 	autoprefixer = require('gulp-autoprefixer'),
 	watch = require('gulp-watch'),
+	imagemin = require('gulp-imagemin'),
 	rename = require('gulp-rename');
  
 //gulp默认命令设置
-gulp.task('default',['lessmin','jsmin','libsmin','htmlmin']);
+gulp.task('default',['lessmin','jsmin','libsmin','htmlmin','imagemin']);
 //gulp自动监听
 gulp.task('watch', function() {
-    gulp.watch('src/html/**/*.html', ['htmlmin']); //当所有html文件发生改变时，调用testLess任务
-    gulp.watch('src/less/**/*.less', ['lessmin']); //当所有less文件发生改变时，调用testLess任务
-    gulp.watch('src/js/**/*.js', ['jsmin']); //当所有js文件发生改变时，调用testLess任务
-    gulp.watch('src/libs/**/*.js', ['libsmin']); //当所有libs文件发生改变时，调用testLess任务
+    gulp.watch('src/html/**/*.html', ['htmlmin']); //当所有html文件发生改变时，调用htmlmin任务
+    gulp.watch('src/less/**/*.less', ['lessmin']); //当所有less文件发生改变时，调用lessmin任务
+    gulp.watch('src/js/**/*.js', ['jsmin']); //当所有js文件发生改变时，调用jsmin任务
+    gulp.watch('src/libs/**/*.js', ['libsmin']); //当所有libs文件发生改变时，调用libsmin任务
+    gulp.watch('src/image/**/*.{png,jpg,gif,ico}', ['imagemin']); //当所有图片文件发生改变时，调用imagemin任务
+});
+//imagemin 图片压缩
+gulp.task('imagemin', function () {
+    gulp.src('src/image/**/*.{png,jpg,gif,ico}')
+        .pipe(imagemin({
+            optimizationLevel: 4, //类型：Number  默认：3  取值范围：0-7（优化等级）
+            progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片
+            interlaced: true, //类型：Boolean 默认：false 隔行扫描gif进行渲染
+            multipass: true //类型：Boolean 默认：false 多次优化svg直到完全优化
+        }))
+        .pipe(gulp.dest('dist/image'));
 });
 //uglify JS代码压缩
 gulp.task('jsmin', function () {
