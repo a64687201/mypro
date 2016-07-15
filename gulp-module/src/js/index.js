@@ -1,3 +1,3 @@
 function ex(){
-	console.log("im ex");
+	console.log("im exxxx");
 }
